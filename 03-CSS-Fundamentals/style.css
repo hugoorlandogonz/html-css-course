@@ -1,7 +1,41 @@
+/* selector universal */
+* {
+  /* todos los espacios por defecto desaparecen y podemos formatear nuestra pagina como queramos */
+  margin: 0;
+  padding: 0;
+}
+
 body {
-  border-top: 1px solid #1098ad;
+  border-top: 10px solid #1098ad;
   color: #444444;
   font-family: sans-serif;
+}
+
+.main-header {
+  background-color: #f7f7f7;
+  /* padding: 20px 40px; -> 20px es el valor de arriba y abajo - 40px es el valor de derecha e izquierda */
+  padding: 20px 40px;
+  margin: 0 0 60px 0;
+}
+
+nav {
+  font-size: 18px;
+}
+
+.post-header {
+  margin: 0 0 40px 0;
+}
+
+article {
+  margin: 0 0 60px 0;
+}
+
+aside {
+  background-color: #f7f7f7;
+  border-top: 5px solid #1098ad;
+  border-bottom: 5px solid #1098ad;
+  /* 50px arriba y abajo - 0 izq y derecha */
+  padding: 50px 0;
 }
 
 /* h1,
@@ -27,10 +61,13 @@ h1 {
 
 h2 {
   font-size: 40px;
+  /* arriba, derecha, abajo izquierda */
+  margin: 0 0 30px 0;
 }
 
 h3 {
   font-size: 30px;
+  margin: 40px 0 20px 0;
 }
 
 h4 {
@@ -45,10 +82,21 @@ p {
   font-size: 22px;
   /* line-height multiplicará el tamaño de fuente del elemento por 1.5 para calcular la altura de la línea  */
   line-height: 1.5;
+  margin: 0 0 15px 0;
+}
+
+ul,
+ol {
+  margin: 0 0 20px 50px;
 }
 
 li {
   font-size: 20px;
+  /* arriba, derecha, abajo, izquierda */
+  margin: 0 0 10px 0;
+}
+li:last-child {
+  margin-bottom: 0;
 }
 
 /* podemos crear un selector de clase o id, el nombre del id no se puede repetir */
@@ -74,16 +122,6 @@ li {
 
 .related {
   list-style: none;
-}
-
-.main-header {
-  background-color: #f7f7f7;
-}
-
-aside {
-  background-color: #f7f7f7;
-  border-top: 5px solid #1098ad;
-  border-bottom: 5px solid #1098ad;
 }
 
 /* pseudo-clase */
