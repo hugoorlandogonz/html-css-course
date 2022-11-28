@@ -1,0 +1,148 @@
+body {
+  border-top: 1px solid #1098ad;
+  color: #444444;
+  font-family: sans-serif;
+}
+
+/* h1,
+h2,
+h3,
+h4,
+p,
+li {
+  color: #444444;
+  font-family: sans-serif;
+} */
+h1,
+h2,
+h3 {
+  color: #1098ad;
+}
+
+h1 {
+  font-size: 26px;
+  font-style: italic;
+  text-transform: uppercase;
+}
+
+h2 {
+  font-size: 40px;
+}
+
+h3 {
+  font-size: 30px;
+}
+
+h4 {
+  font-size: 20px;
+
+  text-transform: uppercase;
+  /* text-align puede centrar el texto */
+  text-align: center;
+}
+
+p {
+  font-size: 22px;
+  /* line-height multiplicará el tamaño de fuente del elemento por 1.5 para calcular la altura de la línea  */
+  line-height: 1.5;
+}
+
+li {
+  font-size: 20px;
+}
+
+/* podemos crear un selector de clase o id, el nombre del id no se puede repetir */
+
+/* id selector */
+#author {
+  font-style: italic;
+  font-size: 18px;
+}
+
+/* selecciona todos los elementos p que esten dentro del elemento footer */
+/* footer p {
+    font-size: 15px;
+  } */
+#copyright {
+  font-size: 15px;
+}
+
+.related-author {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.related {
+  list-style: none;
+}
+
+.main-header {
+  background-color: #f7f7f7;
+}
+
+aside {
+  background-color: #f7f7f7;
+  border-top: 5px solid #1098ad;
+  border-bottom: 5px solid #1098ad;
+}
+
+/* pseudo-clase */
+li:first-child {
+  font-weight: bold;
+}
+
+li:last-child {
+  font-style: italic;
+}
+
+li:nth-child(1) {
+  color: red;
+}
+li:nth-child(2) {
+  color: #ee8282;
+}
+
+/* styling link */
+a:link {
+  color: #1098ad;
+  text-decoration: none;
+}
+
+/* si el usuario ha visitado el enlace, el enlace cambia de color */
+a:visited {
+  color: #b182ee;
+}
+
+a:hover {
+  color: #ee8282;
+  font-weight: bold;
+  text-decoration: underline dotted #ff4500;
+}
+
+/* cuando el elemento a se activa va a recibir estas propiedades css */
+a:active {
+  background-color: #000;
+  font-style: italic;
+}
+
+/* Resolving conflicts */
+/* el id selector tiene la prioridad ante un class selector o un elemento html */
+
+/* prioridad 1
+#copyright {
+  color: red;
+}
+
+prioridad 3
+.copyright {
+  color: blue;
+}
+prioridad 2
+.text {
+  color: yellow;
+}
+
+prioridad 4
+footer p {
+  color: green;
+} */
