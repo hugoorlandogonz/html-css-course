@@ -3,6 +3,7 @@
   /* todos los espacios por defecto desaparecen y podemos formatear nuestra pagina como queramos */
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 body {
@@ -43,9 +44,8 @@ aside {
   background-color: #f7f7f7;
   border-top: 5px solid #1098ad;
   border-bottom: 5px solid #1098ad;
-  /* 50px arriba y abajo - 0 izq y derecha */
-  padding: 50px 0;
-  width: 500px;
+  /* 50px arriba y abajo - 40 izq y derecha */
+  padding: 50px 40px;
 }
 
 /* h1,
@@ -152,6 +152,7 @@ li:last-child {
 
 .related {
   list-style: none;
+  margin: 0 0 0 0;
 }
 
 /* pseudo-clase */
