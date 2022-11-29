@@ -84,13 +84,14 @@ h2 {
 h2::after {
   content: 'TOP'; /* content es obligatorio */
   background-color: #ffff00;
+  color: #000;
   font-size: 16px;
   font-weight: bold;
   display: inline-block;
   /* (5px) top/bottom - (10px) left/right */
   padding: 5px 10px;
   position: absolute;
-  top: -15px;
+  top: -10px;
   right: -25px;
 }
 
