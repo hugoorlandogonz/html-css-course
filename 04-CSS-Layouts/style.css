@@ -238,3 +238,14 @@ prioridad 4
 footer p {
   color: green;
 } */
+
+/* FLOATS */
+.author-img {
+  /* float saca al elemento fuera de su bloque y los demas elementos flotan alrededor de el */
+  float: left;
+  margin: 0 0 20px 0;
+}
+.author {
+  float: left;
+  margin: 10px 0 0 20px;
+}
