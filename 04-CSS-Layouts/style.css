@@ -1,0 +1,240 @@
+/* selector universal */
+* {
+  /* todos los espacios por defecto desaparecen y podemos formatear nuestra pagina como queramos */
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  border-top: 10px solid #1098ad;
+  color: #444444;
+  font-family: sans-serif;
+}
+
+.container {
+  width: 800px;
+  /* 0 arriba/abajo - auto izq/der */
+  margin: 0 auto;
+
+  position: relative;
+}
+
+.main-header {
+  background-color: #f7f7f7;
+  /* padding: 20px 40px; -> 20px es el valor de arriba y abajo - 40px es el valor de derecha e izquierda */
+  padding: 20px 40px;
+  margin: 0 0 60px 0;
+  height: 80px;
+}
+
+nav {
+  font-size: 18px;
+}
+
+.post-header {
+  margin: 0 0 40px 0;
+}
+
+article {
+  margin: 0 0 60px 0;
+}
+
+aside {
+  background-color: #f7f7f7;
+  border-top: 5px solid #1098ad;
+  border-bottom: 5px solid #1098ad;
+  /* 50px arriba y abajo - 0 izq y derecha */
+  padding: 50px 0;
+  width: 500px;
+}
+
+/* h1,
+h2,
+h3,
+h4,
+p,
+li {
+  color: #444444;
+  font-family: sans-serif;
+} */
+h1,
+h2,
+h3 {
+  color: #1098ad;
+}
+
+h1 {
+  font-size: 26px;
+  font-style: italic;
+  text-transform: uppercase;
+}
+
+/* pseudo elemento */
+h1::first-letter {
+  font-style: normal;
+  margin: 0 5px 0 0;
+}
+
+h2 {
+  font-size: 40px;
+  /* arriba, derecha, abajo izquierda */
+  margin: 0 0 30px 0;
+  position: relative;
+}
+h2::after {
+  content: 'TOP'; /* content es obligatorio */
+  background-color: #ffff00;
+  color: #000;
+  font-size: 16px;
+  font-weight: bold;
+  display: inline-block;
+  /* (5px) top/bottom - (10px) left/right */
+  padding: 5px 10px;
+  position: absolute;
+  top: -10px;
+  right: -25px;
+}
+
+h3 {
+  font-size: 30px;
+  margin: 40px 0 20px 0;
+}
+
+h4 {
+  font-size: 20px;
+
+  text-transform: uppercase;
+  /* text-align puede centrar el texto */
+  text-align: center;
+}
+
+p {
+  font-size: 22px;
+  /* line-height multiplicará el tamaño de fuente del elemento por 1.5 para calcular la altura de la línea  */
+  line-height: 1.5;
+  margin: 0 0 15px 0;
+}
+
+ul,
+ol {
+  margin: 0 0 20px 50px;
+}
+
+li {
+  font-size: 20px;
+  /* arriba, derecha, abajo, izquierda */
+  margin: 0 0 10px 0;
+}
+li:last-child {
+  margin-bottom: 0;
+}
+
+/* podemos crear un selector de clase o id, el nombre del id no se puede repetir */
+
+/* id selector */
+#author {
+  font-style: italic;
+  font-size: 18px;
+}
+
+/* selecciona todos los elementos p que esten dentro del elemento footer */
+/* footer p {
+    font-size: 15px;
+  } */
+#copyright {
+  font-size: 15px;
+}
+
+.related-author {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.related {
+  list-style: none;
+}
+
+/* pseudo-clase */
+li:first-child {
+  font-weight: bold;
+}
+
+li:last-child {
+  font-style: italic;
+}
+
+li:nth-child(1) {
+  color: red;
+}
+li:nth-child(2) {
+  color: #ee8282;
+}
+
+/* styling link */
+a:link {
+  color: #1098ad;
+  text-decoration: none;
+}
+
+/* si el usuario ha visitado el enlace, el enlace cambia de color */
+a:visited {
+  color: #b182ee;
+}
+
+a:hover {
+  color: #ee8282;
+  font-weight: bold;
+  text-decoration: underline dotted #ff4500;
+}
+
+/* cuando el elemento a se activa va a recibir estas propiedades css */
+a:active {
+  background-color: #000;
+  font-style: italic;
+}
+
+.post-img {
+  width: 100%; /* con el width en porcentaje, el numero de porcentaje se ajusta al tamaño del contenedor padre de la imagen */
+  height: auto;
+}
+
+nav a:link {
+  display: inline-block;
+  margin: 10px 30px 0 0;
+  display: inline-block;
+}
+nav a:link:last-child {
+  margin: 0 0 0 0;
+}
+
+button {
+  font-size: 22px;
+  padding: 20px;
+  cursor: pointer;
+
+  position: absolute;
+  bottom: 2%;
+  right: 0;
+}
+
+/* Resolving conflicts */
+/* el id selector tiene la prioridad ante un class selector o un elemento html */
+
+/* prioridad 1
+#copyright {
+  color: red;
+}
+
+prioridad 3
+.copyright {
+  color: blue;
+}
+prioridad 2
+.text {
+  color: yellow;
+}
+
+prioridad 4
+footer p {
+  color: green;
+} */
