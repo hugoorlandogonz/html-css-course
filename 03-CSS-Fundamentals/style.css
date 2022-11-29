@@ -69,10 +69,29 @@ h1 {
   text-transform: uppercase;
 }
 
+/* pseudo elemento */
+h1::first-letter {
+  font-style: normal;
+  margin: 0 5px 0 0;
+}
+
 h2 {
   font-size: 40px;
   /* arriba, derecha, abajo izquierda */
   margin: 0 0 30px 0;
+  position: relative;
+}
+h2::after {
+  content: 'TOP'; /* content es obligatorio */
+  background-color: #ffff00;
+  font-size: 16px;
+  font-weight: bold;
+  display: inline-block;
+  /* (5px) top/bottom - (10px) left/right */
+  padding: 5px 10px;
+  position: absolute;
+  top: -15px;
+  right: -25px;
 }
 
 h3 {
@@ -197,26 +216,6 @@ button {
   right: 0;
 }
 
-/* pseudo elemento */
-h1::first-letter {
-  font-style: normal;
-  margin: 0 5px 0 0;
-}
-h2 {
-  position: relative;
-}
-h2::after {
-  content: 'TOP'; /* content es obligatorio */
-  background-color: #ffff00;
-  font-size: 16px;
-  font-weight: bold;
-  display: inline-block;
-  /* (5px) top/bottom - (10px) left/right */
-  padding: 5px 10px;
-  position: absolute;
-  top: 0;
-  right: 0;
-}
 /* Resolving conflicts */
 /* el id selector tiene la prioridad ante un class selector o un elemento html */
 
