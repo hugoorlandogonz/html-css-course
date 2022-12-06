@@ -201,8 +201,7 @@ a:active {
 }
 
 nav a:link {
-  display: inline-block;
-  margin: 10px 30px 0 0;
+  margin: 0 30px 0 0;
   display: inline-block;
 }
 nav a:link:last-child {
@@ -242,8 +241,9 @@ footer p {
 } */
 
 /* FLOATS */
+/*
 .author-img {
-  /* float saca al elemento fuera de su bloque y los demas elementos flotan alrededor de el */
+  float saca al elemento fuera de su bloque y los demas elementos flotan alrededor de el 
   float: left;
   margin: 0 0 20px 0;
 }
@@ -275,4 +275,25 @@ aside {
 }
 footer {
   clear: both;
+}
+*/
+
+/* FLEXBOX */
+.main-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.author-box {
+  display: flex;
+  align-items: center;
+  margin: 0 0 15px 0;
+}
+.author {
+  margin: 0 0 0 15px;
+}
+.related-post {
+  display: flex;
+}
+.related-link {
 }
