@@ -9,7 +9,7 @@
       href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;600;700&display=swap"
       rel="stylesheet"
     />
-    <title>Omifood Hero Section</title>
+    <title>World Cup 2022 - Argentina</title>
 
     <style>
       * {
@@ -28,6 +28,12 @@
       }
       header {
         height: 100vh;
+        position: relative;
+
+        background-image: url('https://pbs.twimg.com/media/FjX5_xyXoAAbsPu?format=jpg&name=4096x4096');
+        /* background-size: cover; calcula el tamaño exacto de la img */
+        background-size: cover;
+        color: #fff;
       }
       nav {
         font-size: 20px;
@@ -38,10 +44,22 @@
       .header-container {
         width: 1200px;
         position: absolute;
+
+        /* In relation to PARENT size */
+        left: 50%;
+        top: 50%;
+
+        /* In relation to ELEMENT size */
+        transform: translate(-50%, -50%);
       }
+      .header-container-inner {
+        width: 50%;
+      }
+
       h1 {
         font-size: 52px;
         margin: 0 0 32px 0;
+        line-height: 1.05;
       }
       h2 {
         font-size: 44px;
@@ -79,13 +97,14 @@
 
       <div class="header-container">
         <div class="header-container-inner">
-          <h1>A healty meal delivered to your door, every single day</h1>
+          <h1>
+            World Cup 2022: 'Emotion driving Argentina more than ever in Qatar'
+          </h1>
           <p>
-            The smart 365-days-per-year food subscription that will make you eat
-            healty algain. Tailored to your personal tastes and nutritional
-            needs
+            World Cup 2022: Argentina vs Croatia - Lionel Messi and Luka Modric
+            battle for last final
           </p>
-          <a href="#" class="btn">Start eating well</a>
+          <a href="#" class="btn">Start the game</a>
         </div>
       </div>
     </header>
@@ -94,13 +113,16 @@
       <div class="container">
         <h2>Some random heading</h2>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque quas,
-          minus beatae sapiente debitis voluptatum, laudantium veritatis impedit
-          corrupti officia recusandae fugit, voluptates iure velit! Ad suscipit
-          vitae nobis optio. Lorem ipsum dolor sit, amet consectetur adipisicing
-          elit. Reiciendis sequi quam earum voluptas eum laboriosam at
-          cupiditate debitis in odio adipisci repudiandae enim ea, sint quos
-          similique! Debitis, facilis dolore?
+          Two iconic Ballon d'Or-winning number 10s. Two beaten World Cup
+          finalists. Two captains. One last chance to finally reach the peak of
+          football and lift the famous trophy before they retire. It is hard to
+          look past Argentina's Lionel Messi and Croatia's Luka Modric as the
+          two difference-makers in Tuesday's first World Cup semi-final. With
+          Paris St-Germain's Messi now 35 and Real Madrid's Modric 37, it seems
+          highly likely the final or third-place play-off this weekend will be
+          where their World Cup careers end. So how do the two compare and which
+          one will lead his country to a final against France or Morocco on
+          Sunday?
         </p>
       </div>
     </section>
