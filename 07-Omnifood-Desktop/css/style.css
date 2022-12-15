@@ -45,3 +45,34 @@
   /* transition: background-color 0.3s; */
   transition: all 0.3s;
 }
+
+.delivered-meals,
+.delivered-imgs {
+  display: flex;
+}
+
+.delivered-meals {
+  align-items: center;
+  gap: 1.6rem;
+  margin-top: 8rem;
+}
+.delivered-imgs img {
+  height: 6.4rem;
+  width: 6.4rem;
+  border-radius: 50%;
+  margin: 0 -1.6rem 0 0;
+  border: 3px solid #fdf2e9;
+}
+
+.delivered-imgs img:last-child {
+  margin: 0;
+}
+.delivered-text {
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+.delivered-text span {
+  color: #cf711f;
+  font-weight: 700;
+}
